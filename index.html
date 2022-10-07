@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | QR code component</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #D5E1EF;
+            
+        }
+        #bcg_div {
+            display: flexbox;
+            background-color: #fff;
+            max-width: 100%;
+            height: auto;
+            margin: 15px;
+            padding: 17px;
+            position: absolute;
+            top: 30px; 
+            border-radius: 18px;
+            
+        }
+        .qr_code_img {
+            max-width: 100%;
+            height: auto;
+            position: relative;
+            top: auto;
+            left: auto;
+            border-radius: 12px;
+        }
+        .first_txt {font-family: 'outfit', sans-serif; font-size: 23px; font-weight: 700;
+            margin-top: 12px; padding: 10px;
+            text-align: center;
+        }
+        .scnd_txt {font-family: 'outfit', sans-serif; font-size: 17px; font-weight: 400;
+            color: #8E919A;
+            text-align: center;
+            margin: 15px;
+            margin-top: 10px;
+       
+        }
+        .attribution { font-size: 11px; text-align:center; position: relative; top: 620px;}
+        .attribution a { color: hsl(228, 45%, 44%); }
+
+
+        @media only screen and (max-width: 400px ) {
+            #bcg_div {
+                max-height: 100%;
+                top: 60px;
+            }
+
+            .attribution {
+                top: 650px;
+            }
+        }
+
+        @media only screen and (min-width: 400px) {
+            #bcg_div {
+                top: 70px;
+            }
+            .attribution {
+                top: 780px;
+            }
+        }
+
+        @media only screen and (max-width: 300px) {
+            #bcg_div {
+                top: 70px;
+            }
+
+            .attribution {
+                top: 620px;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            #bcg_div {
+                max-width: 23%;
+                max-height: 80%;
+                top: 45px;
+                left: 490px;
+            }
+            .qr_code_img {
+                max-width: 100%;
+                height: auto;
+                position: relative;
+                top: auto;
+                left: auto;
+                border-radius: 10px;
+            }
+            .attribution {
+                top: 620px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bcg_div">
+    
+        <img src="images/image-qr-code.png" alt="QR Code Image"  class="qr_code_img">
+        
+        <div class="first_txt">Improve your front-end skills by building projects</div>
+        
+        <div class="scnd_txt">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
+    
+        
+    </div>
+</body>
+<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="www.github.com/modade97">modadeOS</a>.
+</footer>
+</html>
