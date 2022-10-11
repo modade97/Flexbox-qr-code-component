@@ -13,14 +13,21 @@
         body {
             margin: 0em;
             padding: 0em;
-            background-color: #D5E1EF;            
+            background-color: #D5E1EF;  
+            box-sizing: border-box;  
+                    
         }
-        .bcg_div {
-            max-width: 20em;
-            padding: 1.25em;
+       .bcg_div {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cd_div {
+            max-width: 18em;
+            padding: 1.20em;
             background-color: #fff;  
-            border-radius: 1.25em;
-            
+            border-radius: 1.20em;
         }
         .qr_code_img {
             max-width: 100%;
@@ -28,14 +35,14 @@
         }
         .txt_div h1 {
             font-family: 'Outfit', sans-serif;
-            font-size: 27px;
+            font-size: 25px;
             font-weight: 700;
             text-align: center;
             padding: 0.25em;            
         }
         .txt_div p {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.15em;
+            font-size: 17px;
             font-weight: 400;
             color: hsl(220, 15%, 55%);
             text-align: center;
@@ -49,15 +56,17 @@
     </style>
 </head>
 <body>
-    <main class="bcg_div">     
-        
-        <img src="images/image-qr-code.png" alt="Scan Qr Code to visit frontendmentor"  class="qr_code_img">
-        
-        <div class="txt_div">
-            <h1>Improve your front-end skills by building projects</h1>
-            <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-        </div>
-           
+    <main>  
+        <div class="bcg_div">
+            <div class="cd_div">
+                <img src="images/image-qr-code.png" alt="Scan Qr Code to visit frontendmentor"  class="qr_code_img">
+            
+                <div class="txt_div">
+                    <h1>Improve your front-end skills by building projects</h1>
+                    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+                </div>
+            </div>
+        </div>    
     </main>
 </body>
 <footer class="attribution">
