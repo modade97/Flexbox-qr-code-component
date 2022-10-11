@@ -11,113 +11,67 @@
 
     <style>
         body {
-            margin: 0px;
-            padding: 0px;
-            background-color: #D5E1EF;
-            
+            margin: 0em;
+            padding: 0em;
+            background-color: #D5E1EF;  
+            box-sizing: border-box;  
+                    
         }
-        #bcg_div {
-            display: flexbox;
-            background-color: #fff;
-            max-width: 100%;
-            height: auto;
-            margin: 15px;
-            padding: 17px;
-            position: absolute;
-            top: 30px; 
-            border-radius: 18px;
-            
+       .bcg_div {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cd_div {
+            max-width: 18em;
+            padding: 1.20em;
+            background-color: #fff;  
+            border-radius: 1.20em;
         }
         .qr_code_img {
             max-width: 100%;
-            height: auto;
-            position: relative;
-            top: auto;
-            left: auto;
-            border-radius: 12px;
+            border-radius: 0.75em;
         }
-        .first_txt {font-family: 'outfit', sans-serif; font-size: 23px; font-weight: 700;
-            margin-top: 12px; padding: 10px;
+        .txt_div h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.56em;
+            font-weight: 700;
             text-align: center;
+            padding: 0.25em;            
         }
-        .scnd_txt {font-family: 'outfit', sans-serif; font-size: 17px; font-weight: 400;
-            color: #8E919A;
+        .txt_div p {
+            font-family: 'Outfit', sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            color: hsl(220, 15%, 55%);
             text-align: center;
-            margin: 15px;
-            margin-top: 10px;
-       
+            padding: 0.25em; 
         }
-        .attribution { font-size: 11px; text-align:center; position: relative; top: 620px;}
+
+        .attribution { font-size: 11px; text-align:center;  display: none;}
         .attribution a { color: hsl(228, 45%, 44%); }
-
-
-        @media only screen and (max-width: 400px ) {
-            #bcg_div {
-                max-height: 100%;
-                top: 60px;
-            }
-
-            .attribution {
-                top: 650px;
-            }
-        }
-
-        @media only screen and (min-width: 400px) {
-            #bcg_div {
-                top: 70px;
-            }
-            .attribution {
-                top: 780px;
-            }
-        }
-
-        @media only screen and (max-width: 300px) {
-            #bcg_div {
-                top: 70px;
-            }
-
-            .attribution {
-                top: 620px;
-            }
-        }
-
-        @media only screen and (min-width: 1024px) {
-            #bcg_div {
-                max-width: 23%;
-                max-height: 80%;
-                top: 45px;
-                left: 490px;
-            }
-            .qr_code_img {
-                max-width: 100%;
-                height: auto;
-                position: relative;
-                top: auto;
-                left: auto;
-                border-radius: 10px;
-            }
-            .attribution {
-                top: 620px;
-            }
-
-        }
 
     </style>
 </head>
 <body>
-    <div id="bcg_div">
-    
-        <img src="images/image-qr-code.png" alt="QR Code Image"  class="qr_code_img">
+    <main class="bcg_div">  
+        <div class="cd_div">
+            <img src="images/image-qr-code.png" alt="Scan Qr Code to visit frontendmentor"  class="qr_code_img">
         
-        <div class="first_txt">Improve your front-end skills by building projects</div>
-        
-        <div class="scnd_txt">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
-    
-        
-    </div>
+            <div class="txt_div">
+                <h1>Improve your front-end skills by building projects</h1>
+                <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+            </div>
+
+        </div> 
+
+    </main>
 </body>
+
 <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="www.github.com/modade97">modadeOS</a>.
+    Coded by <a href="www.github.io/modade97">modadeOS</a>.
 </footer>
+
 </html>
